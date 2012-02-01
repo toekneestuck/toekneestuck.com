@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap
+END
+class.wsdl.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.wsdl.php
+END
+class.soap_fault.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.soap_fault.php
+END
+class.soap_transport_http.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.soap_transport_http.php
+END
+class.wsdlcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.wsdlcache.php
+END
+class.soap_parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.soap_parser.php
+END
+class.nusoap_base.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.nusoap_base.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/index.html
+END
+class.soapclient.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.soapclient.php
+END
+class.xmlschema.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.xmlschema.php
+END
+nusoap.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/nusoap.php
+END
+class.soap_val.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Nusoap/class.soap_val.php
+END

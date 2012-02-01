@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache
+END
+Eaccelerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/Eaccelerator.php
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/Base.php
+END
+Xcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/Xcache.php
+END
+File.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/File.php
+END
+Wincache.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/Wincache.php
+END
+Apc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/Apc.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/index.html
+END
+Memcached.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cache/Memcached.php
+END

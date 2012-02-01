@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify
+END
+Minify.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify.php
+END
+FirePHP.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/FirePHP.php
+END
+JSMin.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/JSMin.php
+END
+JSMinPlus.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/JSMinPlus.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/index.html
+END

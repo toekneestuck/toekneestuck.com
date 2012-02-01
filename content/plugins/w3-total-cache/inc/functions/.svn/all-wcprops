@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions
+END
+extract.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/extract.php
+END
+plugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/plugin.php
+END
+file.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/file.php
+END
+http.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/http.php
+END
+activation.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/activation.php
+END
+url.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/url.php
+END
+compat.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/compat.php
+END
+mime.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/mime.php
+END
+rule.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/functions/rule.php
+END

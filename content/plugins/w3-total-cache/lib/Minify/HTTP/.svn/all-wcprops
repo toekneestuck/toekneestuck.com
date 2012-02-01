@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/HTTP
+END
+Encoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/HTTP/Encoder.php
+END
+ConditionalGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/HTTP/ConditionalGet.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/HTTP/index.html
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics
+END
+LogLevel.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/LogLevel.php
+END
+Manager.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/Manager.php
+END
+ConfigurationInstance.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationInstance.php
+END
+ConfigurationLogs.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationLogs.php
+END
+ConfigurationPerformanceCounters.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationPerformanceCounters.php
+END
+ConfigurationObjectBaseAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationObjectBaseAbstract.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/Exception.php
+END
+DirectoryConfigurationSubscription.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/DirectoryConfigurationSubscription.php
+END
+ConfigurationDiagnosticInfrastructureLogs.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationDiagnosticInfrastructureLogs.php
+END
+ConfigurationDirectories.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationDirectories.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/index.html
+END
+ConfigurationDataSources.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationDataSources.php
+END
+ConfigurationWindowsEventLog.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/ConfigurationWindowsEventLog.php
+END
+PerformanceCounterSubscription.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/WindowsAzure/Diagnostics/PerformanceCounterSubscription.php
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini
+END
+memcache.ini
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/memcache.ini
+END
+apc.ini
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/apc.ini
+END
+eaccelerator.ini
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/eaccelerator.ini
+END
+xcache.ini
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/xcache.ini
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/index.html
+END
+php.append.ini
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/php.append.ini
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/ini/.htaccess
+END

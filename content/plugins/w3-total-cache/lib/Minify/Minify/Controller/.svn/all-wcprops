@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/Base.php
+END
+Page.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/Page.php
+END
+Groups.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/Groups.php
+END
+Files.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/Files.php
+END
+MinApp.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/MinApp.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/index.html
+END
+Version1.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Minify/Minify/Controller/Version1.php
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter
+END
+Stream.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/Stream.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/Exception.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/Interface.php
+END
+Proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/Proxy.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/index.html
+END
+Curl.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/Curl.php
+END
+Socket.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/Microsoft/Http/Client/Adapter/Socket.php
+END

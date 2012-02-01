@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options
+END
+objectcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/objectcache.php
+END
+pgcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/pgcache.php
+END
+minify.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/minify.php
+END
+cdn.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/cdn.php
+END
+install.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/install.php
+END
+browsercache.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/browsercache.php
+END
+faq.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/faq.php
+END
+mobile.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/mobile.php
+END
+dbcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/dbcache.php
+END
+about.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/about.php
+END
+support.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/support.php
+END
+referrer.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/referrer.php
+END
+general.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/general.php
+END
+faq.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/faq.xml
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/inc/options/index.html
+END

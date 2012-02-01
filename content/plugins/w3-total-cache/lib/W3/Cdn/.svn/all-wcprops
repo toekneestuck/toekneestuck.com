@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn
+END
+Ftp.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/Ftp.php
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/Base.php
+END
+Mirror.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/Mirror.php
+END
+Rscf.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/Rscf.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/index.html
+END
+S3.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/S3.php
+END
+Azure.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Cdn/Azure.php
+END

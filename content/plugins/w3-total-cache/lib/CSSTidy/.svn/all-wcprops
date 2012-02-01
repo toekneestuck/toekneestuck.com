@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/CSSTidy
+END
+class.csstidy_optimise.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/CSSTidy/class.csstidy_optimise.php
+END
+data.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/CSSTidy/data.inc.php
+END
+class.csstidy_print.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/CSSTidy/class.csstidy_print.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/CSSTidy/index.html
+END
+class.csstidy.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/CSSTidy/class.csstidy.php
+END

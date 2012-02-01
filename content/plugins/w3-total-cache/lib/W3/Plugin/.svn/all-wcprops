@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin
+END
+TotalCacheActivation.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/TotalCacheActivation.php
+END
+PgCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/PgCache.php
+END
+ObjectCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/ObjectCache.php
+END
+Minify.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/Minify.php
+END
+PgCacheAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/PgCacheAdmin.php
+END
+MinifyAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/MinifyAdmin.php
+END
+Cdn.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/Cdn.php
+END
+TotalCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/TotalCache.php
+END
+BrowserCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/BrowserCache.php
+END
+DbCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/DbCache.php
+END
+CdnCommon.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/CdnCommon.php
+END
+CdnAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/CdnAdmin.php
+END
+TotalCacheAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/TotalCacheAdmin.php
+END
+BrowserCacheAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/BrowserCacheAdmin.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/428862/w3-total-cache/tags/0.9.2.4/lib/W3/Plugin/index.html
+END
