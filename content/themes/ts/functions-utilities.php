@@ -115,8 +115,8 @@ function get_image_details( $image, $size='large' ){
 		wp_oembed_get( $video_url, array('width' => 844) ) : 
 		wp_get_attachment_image( $image->ID,  $size, false, array('data-id' => $image->ID) );
 
-	$arr['title'] = wptexturize( !empty( $image->post_title ) ? $image->post_title : $image->post_excerpt );
-	$arr['desc'] = wpautop( wptexturize( !empty( $image->post_content ) ? $image->post_content : $image->post_excerpt ) );
+	$arr['title'] = wptexturize( !empty( $image->post_excerpt ) ? $image->post_excerpt : $image->post_title );
+	$arr['desc'] = wpautop( wptexturize( !empty( $image->post_content ) ? $image->post_content : '' ) );
 	return $arr;
 }
 

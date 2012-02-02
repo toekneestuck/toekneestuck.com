@@ -107,7 +107,7 @@ $(document).ready(function(){
 
 			$history.bind('statechange', function(){
 				var state = $history.getState();
-				updatePage(state.data);
+				if( !_.isEmpty(state.data) ) updatePage(state.data);
 			});
 		}
 

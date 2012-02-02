@@ -178,13 +178,13 @@ pre.prettyprint{
 	.border-radius(3px);
 	.box-sizing(border-box);
 	.transition(width 0.25s ease-out);
-	
+
 	&>*{
 		font-size: 14/@em;
 	}
 	&.linenums{
 		padding: 0;
-		
+
 		.linenums{
 			padding: 0 0 0 56/@em;
 
@@ -269,6 +269,7 @@ article{
 	background: lighten(@lgray, 35%);
 	border: 2px solid fadeout(@lgray, 70%);
 	color: lighten(@lgray, 15%);
+	display: inline-block;
 	padding: 4.64/@em 11.2/@em;
 	text-transform: uppercase;
 	background-clip: padding-box;
@@ -425,6 +426,18 @@ hr{
 	a{
 		color: @dgreen;
 	}
+	.button,
+	button{
+		background: fadeout(@white, 70%);
+		border-color: @white;
+		border-width: 2px; /* Weird WebKit bug - Chrome 18 */
+		color: @white;
+		.text-shadow(none);
+		
+		&:hover{
+			border-color: @green;
+		}
+	}
 }
 
 /* !Notice ==== */
@@ -453,6 +466,7 @@ hr{
 body{
 	background: #f6f6f6 url(../../assets/cork.jpg) repeat 0 0;
 }
+.standard-width,
 .container,
 .main{
 	margin-left: auto;
@@ -1288,7 +1302,12 @@ article{
 		}
 
 		.title{
-			line-height: 1.5;
+			line-height: 1.2;
+			margin-top: 2/@em;
+			
+			a:hover{
+				border: none;
+			}
 		}
 
 		&:hover{
@@ -1409,6 +1428,73 @@ article{
 	}
 }
 
+.gform_wrapper{
+	margin: 16/@em 0;
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	textarea.small{
+		height: 200/@em;
+	}
+
+	.gfield{
+		margin-bottom: 12/@em;
+
+		input,
+		textarea{
+			width: 100%;
+		}
+	}
+	.gfield_label{
+		display: block;
+		font-size: 18/@em;
+		font-weight: @bold;
+		margin: 0 0 4/@em;
+	}
+	.gfield_required{
+		color: @red_active;
+		padding: 0 3/@em;
+	}
+	.gform_hidden,
+	.gform_validation_container{
+		left: -999em;
+		position: absolute;
+	}
+	.gfield_description{
+		font-size: 12/@em;
+		padding-top: 6/@em;
+	}
+	.gfield_error{
+		background-color: lighten(@red_active, 40%);
+		border: 1px solid @red_active;
+		padding: 8/@em;
+
+		.border-radius(3px);
+	}
+	.validation_message{
+		color: @burgundy;
+	}
+}
+.validation_error,
+#gforms_confirmation_message{
+	background-color: @red_active;
+	border: 1px solid @burgundy;
+	color: @white;
+	margin: 8/@em 0;
+	padding: 8/@em 10/@em;
+	
+	.border-radius(3px);
+}
+#gforms_confirmation_message{
+	border-color: darken(@green, 10%);
+	background-color: lighten(@green, 20%);
+	color: @dgray;
+}
+
 
 
 /* =========================================== */
@@ -1483,6 +1569,7 @@ article{
 /* ================================================= */
 
 @media screen and (min-width: 15em) {
+	.standard-width,
 	.container,
 	.main,
 	.circles{
@@ -1597,6 +1684,7 @@ article{
 /* ================================================= */
 
 @media screen and (min-width: 30em) {
+	.standard-width,
 	.container,
 	.main,
 	.circles{
@@ -1665,6 +1753,7 @@ article{
 /* ================================================= */
 
 @media screen and (min-width: 37.5em) {
+	.standard-width,
 	.container,
 	.main{
 		width: @8cols;
@@ -1988,7 +2077,7 @@ article{
 		}
 		pre.prettyprint{
 			width: @9cols;
-	
+
 			&:hover{
 				width: @14cols;
 			}

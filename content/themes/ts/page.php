@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-<div class="main clearfix" role="main">
+<div class="standard-width clearfix" role="main">
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php get_template_part( 'content', 'page' ); ?>
 <?php endwhile ?>
