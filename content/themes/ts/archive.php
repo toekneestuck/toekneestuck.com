@@ -1,6 +1,6 @@
 <?php
 /**
- * The category template file.
+ * The archive template file.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -15,16 +15,19 @@
 get_header(); ?>
 <div class="main clearfix">
 <?php if ( have_posts() ) : ?>
-	<section class="primary tag collection" role="main">
+	<section class="primary archive collection" role="main">
 		<header class="headline">
-			<h1><?php
-				printf( __( 'Tag Archives: %s', 'toeknee' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-			?></h1>
-			<?php
-				$tag_description = tag_description();
-				if ( ! empty( $category_description ) )
-					echo apply_filters( 'tag_archive_meta', '<div class="tag-archive-meta">' . $tag_description . '</div>' );
-			?>
+			<h1>
+				<?php if ( is_day() ) : ?>
+					<?php printf( __( 'Daily Archives: %s', 'toeknee' ), '<span>' . get_the_date() . '</span>' ); ?>
+				<?php elseif ( is_month() ) : ?>
+					<?php printf( __( 'Monthly Archives: %s', 'toeknee' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
+				<?php elseif ( is_year() ) : ?>
+					<?php printf( __( 'Yearly Archives: %s', 'toeknee' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
+				<?php else : ?>
+					<?php _e( 'Blog Archives', 'twentyeleven' ); ?>
+				<?php endif; ?>
+			</h1>
 		</header>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php get_template_part( 'content', get_post_format() ); ?>

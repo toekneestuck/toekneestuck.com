@@ -15,16 +15,9 @@
 get_header(); ?>
 <div class="main clearfix">
 <?php if ( have_posts() ) : ?>
-	<section class="primary tag collection" role="main">
+	<section class="primary search collection" role="main">
 		<header class="headline">
-			<h1><?php
-				printf( __( 'Tag Archives: %s', 'toeknee' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-			?></h1>
-			<?php
-				$tag_description = tag_description();
-				if ( ! empty( $category_description ) )
-					echo apply_filters( 'tag_archive_meta', '<div class="tag-archive-meta">' . $tag_description . '</div>' );
-			?>
+			<h1><?php printf( __( 'Search Results for: %s', 'toeknee' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		</header>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php get_template_part( 'content', get_post_format() ); ?>

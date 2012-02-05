@@ -16,7 +16,7 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article role="main" id="post-<?php the_ID(); ?>" <?php post_class('about'); ?>>
 		<div class="container">
-			<header class="center">
+			<header class="center headline">
 				<?php the_content(); ?>
 			</header><!-- /.entry-content -->
 	

@@ -168,7 +168,7 @@ function toeknee_add_scripts(){
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', '1.7.1');
 
 		wp_enqueue_script('typekit', TYPEKIT_URL, null);
-		wp_enqueue_script('modernizr', home_url( get_bloginfo('template_url') . '/js/libs/modernizr.prod.min.js' ), null );
+		wp_enqueue_script('modernizr', home_url( get_bloginfo('template_url') . '/js/libs/modernizr-2.0.6.dev.js' ), null );
 		wp_enqueue_script('main', home_url( get_bloginfo('template_url') . '/js/min/main.min.js' ), null, '1.0', true);
 
 		// Required for nested reply function that moves reply inline with JS

@@ -16,7 +16,7 @@ function toeknee_init(){
 	add_action( 'right_now_content_table_end', 'add_project_counts' );
 	add_action( 'restrict_manage_posts','filter_by_custom_taxonomies' );
 	add_action( 'add_meta_boxes', 'toeknee_add_meta_boxes' );
-	add_action('save_post', 'toeknee_save_post');
+	add_action( 'save_post', 'toeknee_save_post' );
 	
 	/** ALL ADMIN FILTERS **/
 	add_filter( 'favorite_actions', 'custom_favorite_actions' );
@@ -28,16 +28,16 @@ function toeknee_init(){
 	
 	/** CUSTOM ADMIN STYLES **/
 	wp_enqueue_style('toeknee_admin', home_url( get_bloginfo('template_url') . '/admin/admin-styles.css' ) );
+	
+	add_option( 'project_archive_threshold_date', date('m/d/Y', (time() - ( 2 * 52 * 7 * 24 * 60 * 60)) ) );
+	add_settings_field( 'project_archive_threshold_date', __('Project Archive Threshold Date', 'toeknee'), 'toeknee_add_project_threshold_date', 'reading' );
+	register_setting('reading', 'project_archive_threshold_date');
 }
 
-/**
-* 
-* Projects is in the favorites menu all the time
-* 
-**/
-function custom_favorite_actions($actions){
-	$actions["post-new.php?post_type=projects"] = array("New Project", "edit_posts");
-	return $actions;
+function toeknee_add_project_threshold_date(){
+	$text = get_option('project_archive_threshold_date');
+	echo "<input type='text' name='project_archive_threshold_date' id='project_archive_threshold_date' size='40' value='$text' />";
+	echo "<small class='nonessential'>Format: MM/DD/YYYY</small>";
 }
 
 /**

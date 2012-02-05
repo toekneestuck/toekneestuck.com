@@ -13,6 +13,7 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 <meta http-equiv="Content-Language" content="<?php bloginfo('charset') ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 
 <title><?php wp_title( '|', true, 'right' ); bloginfo('blogname') ?></title>
 

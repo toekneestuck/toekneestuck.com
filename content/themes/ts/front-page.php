@@ -12,7 +12,9 @@ get_header();
 if( have_posts() ) while( have_posts() ): the_post(); ?>
 
 <section class="container greeting center">
-	<?php the_content(); ?>
+	<header>
+		<?php the_content(); ?>
+	</header>
 </section>
 
 <?php endwhile; ?>

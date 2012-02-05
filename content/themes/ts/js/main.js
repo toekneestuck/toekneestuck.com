@@ -4,6 +4,7 @@
 // @codekit-prepend plugins/jquery.history.adapter.min.js
 // @codekit-prepend libs/history.min.js
 // @codekit-prepend plugins/history.html4.min.js
+// @codekit-prepend plugins/jquery.sap.min.js
 
 
 Modernizr.addTest('cssmask', Modernizr.testAllProps('mask'));
@@ -24,11 +25,19 @@ $(document).ready(function(){
 		});
 	});
 
-	$('.project-nav-container').hoverIntent({
-		sensitivity: 30,
-		over : function(e){ $(this).stop().animate({height: $('.container', this).height() }, 'fast') },
-		out : function(e){ $(this).stop().animate({height: 10 }, 'fast') }
-	});
+	// Widescreen only
+	if( Modernizr.mq('screen and (min-width: 57em)') && !Modernizr.touch ){
+		$('.project-nav-container').hoverIntent({
+			sensitivity: 30,
+			over : function(e){ $(this).stop().animate({height: $('.container', this).outerHeight() }, 'fast') },
+			out : function(e){ $(this).stop().animate({height: '2.5em' }, 'fast') }
+		}).sap({
+			width:'100%',
+			distanceFromTheTop: $('#header .bar').height()
+		});
+		
+		$('#header .bar').sap({width:'100%'});
+	}
 
 	/** Single Project Pages **/
 	$.Project = function(){

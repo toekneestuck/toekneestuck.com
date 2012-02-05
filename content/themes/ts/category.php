@@ -15,15 +15,15 @@
 get_header(); ?>
 <div class="main clearfix">
 <?php if ( have_posts() ) : ?>
-	<section class="primary tag collection" role="main">
+	<section class="primary category collection" role="main">
 		<header class="headline">
 			<h1><?php
-				printf( __( 'Tag Archives: %s', 'toeknee' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+				printf( __( 'Category Archives: %s', 'toeknee' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 			?></h1>
 			<?php
-				$tag_description = tag_description();
+				$category_description = category_description();
 				if ( ! empty( $category_description ) )
-					echo apply_filters( 'tag_archive_meta', '<div class="tag-archive-meta">' . $tag_description . '</div>' );
+					echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
 			?>
 		</header>
 	<?php while ( have_posts() ) : the_post(); ?>

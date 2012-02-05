@@ -13,8 +13,8 @@ $old_posts = array();
 global $posts;
 foreach( $posts as $key=>$post ){
 
-	// If the post is older than two years
-	if( strtotime($post->post_date) <= (time() - ( 2 * 52 * 7 * 24 * 60 * 60)) ){
+	// If the post is older than the threshold, "archive" it
+	if( strtotime($post->post_date) <= strtotime( get_option('project_archive_threshold_date') ) ){
 		$old_posts[] = $post;
 		unset($posts[$key]);
 	}
@@ -32,7 +32,7 @@ foreach( $posts as $key=>$post ){
 
 	<section class="container clearfix" id="projects">
 	<?php if( count($posts) > 0 ): ?>
-		<ul id="latest_posts">
+		<ul id="latest_posts" class="clearfix">
 		<?php foreach( $posts as $key=>$post ): setup_postdata($post); ?>
 			<?php get_template_part( 'content', 'project' ); ?>
 		<?php endforeach; ?>
@@ -44,7 +44,7 @@ foreach( $posts as $key=>$post ){
 	<?php if( count($old_posts) > 0 ): ?>
 		<hgroup class="center">
 			<h3 class="headline"><?php _e("The Seriously Old Stuff", 'toeknee') ?></h3>
-			<h6 class="subheadline"><?php _e("I decided not to let these projects die a silent, binary death,<br />so here are some of the older and less web-related things I've done in the distant past.", 'toeknee') ?></h6>
+			<h6 class="subheadline"><?php _e("I decided not to let these projects die a silent, binary death,<br />so here are some of the older and/or less web-related things I've done in the distant past.", 'toeknee') ?></h6>
 		</hgroup>
 
 		<ul id="old_posts">

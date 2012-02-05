@@ -34,7 +34,7 @@ get_header(); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toeknee' ), 'after' => '</div>' ) ); ?>
 			</div><!-- /.entry-content -->
 
-			<?php the_tags('<p class="tag-list">Tagged: ', ', ', '</p>'); ?>
+			<?php the_tags('<p class="tag-list">Tagged: ', '<span class="screen-reader-text">,</span> ', '</p>'); ?>
 		</article>
 
 		<nav class="navigation nav-below clearfix">

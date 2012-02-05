@@ -34,7 +34,7 @@ if( have_posts() ) while ( have_posts() ) : the_post();
 ?>
 <article role="main" id="main" <?php post_class('project') ?>>
 
-	<header class="container">
+	<header class="container headline">
 		<hgroup>
 			<h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
 			<h6 class="meta">
