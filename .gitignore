@@ -1,7 +1,6 @@
 wp-*
 xmlrpc*
 license*
-readme*
 content/uploads/*
 content/upgrade/*
 .DS_Store
@@ -9,3 +8,6 @@ content/upgrade/*
 local-config.php
 debug.log
 .svn/*
+readme*
+
+!README.md
