@@ -48,7 +48,8 @@ button,
 .comment-reply-link,
 input[type="submit"],
 .goals-table .legend,
-.circle .details{
+.circle .details,
+article ol li:before{
 	font-family: depot-new-condensed-web-1, depot-new-condensed-web-2, futura-pt, Futura, Tahoma, Helvetica, sans-serif;
 }
 
@@ -359,6 +360,7 @@ hr{
 
 		&:hover{
 			background: none;
+			border: none;
 
 			span{
 				background-position-y: -22px;
@@ -461,6 +463,22 @@ hr{
 	width:100%;
 }
 
+.wf-loading{
+	body{
+		background-image: url(../../assets/ajax-loader.gif);
+		background-position: center 200px;
+		background-repeat: no-repeat;
+	}
+	.content-wrapper{
+		.opacity(0);
+	}
+}
+.wf-active{
+	.content-wrapper{
+		.opacity(100);
+	}
+}
+
 
 
 /* =========================================== */
@@ -469,6 +487,9 @@ hr{
 
 body{
 	background: #f6f6f6 url(../../assets/cork.jpg) repeat 0 0;
+}
+.content-wrapper{
+	.transition(all .25s ease);	
 }
 .standard-width,
 .container,
@@ -542,7 +563,7 @@ body{
 				left: -8/@em;
 				padding: 8/@em 8/@em 0 8/@em;
 				position: absolute;
-				z-index: 10;
+				z-index: 1;
 				top: 100%;
 				width: 100%;
 
@@ -661,12 +682,41 @@ article{
 		position: relative;
 	}
 
+	li{
+		padding: 4/@em 0;
+	}
+
 	.entry-meta{
 		font-weight: @thin;
 	}
 	.entry-content{
 		a{
 			border-bottom: 1px solid @red_active;
+		}
+	}
+}
+.generatedcontent{
+	article ol{
+		counter-reset: numbers 0;
+		padding-left: 48/@em;
+
+		li{
+			list-style: none;
+			position: relative;
+
+			&:before{
+				border: 1px dashed @lgray;
+				content: counter(numbers);
+				counter-increment: numbers;
+				height: 24/@em;
+				left: -36/@em;
+				position: absolute;
+				text-align: center;
+				top: 4/@em;
+				width: 24/@em;
+
+				.border-radius(12/@em);
+			}
 		}
 	}
 }
@@ -1093,9 +1143,32 @@ section.collection{
 	}
 }
 
+/* !Sharing ==== */
+.sharing{
+	margin: 16/@em 0;
+
+	a:hover{
+		background-color: none;
+		border: none;
+	}
+}
+
 /* !Comments ==== */
 #comments{
 	margin: 32/@em 0;
+
+	.social{
+		margin-right: 8/@em;
+
+		a{
+			display: inline-block;
+			vertical-align: bottom;
+
+			span{
+				background-position-y: -22px;
+			}
+		}
+	}
 }
 .commentlist{
 	list-style: none;
@@ -1164,6 +1237,7 @@ section.collection{
 	position: relative;
 
 	.border-radius(3px);
+	.clearfix();
 
 	label{
 		display: block;
@@ -1182,8 +1256,18 @@ section.collection{
 		margin: 0 0 16/@em;
 	}
 	.form-submit{
-		margin: 16/@em 0 0;
+		margin: 0;
 		text-align: right;
+	}
+	.comment-form-comment{
+		margin-bottom: 16/@em;
+	}
+	.comment-subscription-form{
+		margin: 0;
+
+		label{
+			display: inline;
+		}
 	}
 
 	#comment{
@@ -1877,6 +1961,12 @@ section.collection{
 			&:nth-child(odd){
 				margin-left: 38.4/@em;
 			}
+		}
+	}
+
+	#respond{
+		.form-submit{
+			float: right;
 		}
 	}
 

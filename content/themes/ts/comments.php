@@ -25,6 +25,9 @@
 	endif;
 
 if ( have_comments() ) : ?>
+	<p class="social left">
+		<a href="<?php echo get_post_comments_feed_link() ?>" class="rss" title="<?php _e('Subscribe to the Comments Feed', 'toeknee') ?>" data-twipsy="true"><span><?php _e('Subscribe to the Comments Feed', 'toeknee') ?></span></a>
+	</p>
 	<h3 class="comments-title"><?php
 	printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'toeknee' ),
 	number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' );

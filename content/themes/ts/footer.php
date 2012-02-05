@@ -8,17 +8,18 @@
  */
 ?>
 
-<footer id="footer">
-	<div class="container">
-		<?php wp_nav_menu(array(
-			'theme_location' => 'primary',
-			'container' => 'nav',
-			'container_class' => null,
-			'container_id' => null
-		)); ?>
-		<p class="copyright">&copy; <?php echo date('Y') ?> Copyright Tony Stuck. <?php bloginfo('description'); ?></p>
-	</div>
-</footer>
+	<footer id="footer">
+		<div class="container">
+			<?php wp_nav_menu(array(
+				'theme_location' => 'primary',
+				'container' => 'nav',
+				'container_class' => null,
+				'container_id' => null
+			)); ?>
+			<p class="copyright">&copy; <?php echo date('Y') ?> Copyright Tony Stuck. <?php bloginfo('description'); ?></p>
+		</div>
+	</footer>
+</div><!-- /.content-wrapper -->
 
 <?php if( !wp_script_is('jquery', 'done') ): ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

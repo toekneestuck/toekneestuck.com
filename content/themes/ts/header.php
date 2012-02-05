@@ -4,10 +4,10 @@
  * @subpackage toekneestuck
  */
 ?><!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="no-js oldie ie6" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js oldie ie7" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js oldie ie8" <?php language_attributes(); ?>> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js oldie ie6" xmlns:fb="http://www.facebook.com/2008/fbml" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js oldie ie7" xmlns:fb="http://www.facebook.com/2008/fbml" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js oldie ie8" xmlns:fb="http://www.facebook.com/2008/fbml" <?php language_attributes(); ?>> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" xmlns:fb="http://www.facebook.com/2008/fbml" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
@@ -57,3 +57,4 @@
 		</p>
 	</div>
 </header>
+<div class="content-wrapper">
