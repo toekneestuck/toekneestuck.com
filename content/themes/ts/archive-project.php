@@ -48,8 +48,9 @@ foreach( $posts as $key=>$post ){
 		<?php if( $archive_headline = get_option('project_archive_headline') ): ?>
 			<h3 class="headline"><?php _e($archive_headline, 'toeknee') ?></h3>
 		<?php endif; ?>
-		<?php if( $archive_subheadline = get_option('project_archive_subheadline') ): ?>
-			<h6 class="subheadline"><?php _e($archive_subheadline, 'toeknee') ?></h6>
+		<?php if( $archive_subheadline = get_option('project_archive_subheadline') ): 
+				// WordPress can't store this much text in an option (lame). ?>
+			<h6 class="subheadline"><?php _e("I decided not to let these projects die a silent, binary death,<br />so here are some of the older and/or less web-related things I've done in the distant past.", 'toeknee') ?></h6>
 		<?php endif; ?>
 		</hgroup>
 

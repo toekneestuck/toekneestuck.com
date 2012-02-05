@@ -45,6 +45,8 @@ function toeknee_init(){
 	register_setting('reading', 'project_archive_threshold_date');
 	register_setting('reading', 'project_subheadline');
 	register_setting('reading', 'project_archive_headline');
+
+	// WordPress limits options to 2^32 bytes of data. So this is currently acting as just a boolean. Lame.
 	register_setting('reading', 'project_archive_subheadline');
 }
 
@@ -71,7 +73,7 @@ function toeknee_add_project_archive_headline(){
 
 function toeknee_add_project_archive_subheadline(){
 	$subheadline = get_option('project_archive_subheadline');
-	echo "<input type='text' class='widefat' name='project_archive_subheadline' id='project_archive_subheadline' size='100' value='$subheadline' />";
+	echo "<input type='text' class='widefat' name='project_archive_subheadline' id='project_archive_subheadline' value='$subheadline' />";
 }
 
 function toeknee_add_project_subheadline(){
