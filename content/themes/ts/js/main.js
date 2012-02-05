@@ -152,7 +152,6 @@ $(document).ready(function(){
 
 		/** If the request succeeded **/
 		function success( data, element ){
-			console.log("Successful ajax call");
 
 			if( ! data.error && parseInt(data) != -1 ){
 				$history.push( data, $history.formatTitle(data.title), $(element).prop('href') );
@@ -184,6 +183,7 @@ $(document).ready(function(){
 
 		function showContent(){
 			v.contHeight = $(v.container).css('visibility', 'hidden').show().height();
+			v.$loader.fadeOut('fast');
 
 			$(v.container)
 				.hide().css('visibility', 'inherit')
@@ -234,14 +234,13 @@ $(document).ready(function(){
 		}
 
 		function ajaxStop(){
-			v.$loader.fadeOut('fast');
+			//v.$loader.fadeOut('fast');
 		}
 
 		return {
 			init : function(obj){
 				$.extend(v,obj);
 				if( $(v.container).length ){
-					console.log('Project Initialization');
 					setupImageDetails();
 					setupAjax();
 					setupEvents();
