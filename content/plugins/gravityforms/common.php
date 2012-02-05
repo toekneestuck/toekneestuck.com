@@ -1,7 +1,7 @@
 <?php
 class GFCommon{
 
-    public static $version = "1.6.2";
+    public static $version = "1.6.2.1.1";
     public static $tab_index = 1;
 
     public static function get_selection_fields($form, $selected_field_id){
@@ -706,13 +706,18 @@ class GFCommon{
         $text = str_replace("{referer}", $url_encode ? urlencode(RGForms::get("HTTP_REFERER", $_SERVER)) : RGForms::get("HTTP_REFERER", $_SERVER), $text);
 
         //logged in user info
-        global $userdata;
+        global $userdata, $wp_version, $current_user;
         $user_array = self::object_to_array($userdata);
+
         preg_match_all("/\{user:(.*?)\}/", $text, $matches, PREG_SET_ORDER);
         foreach($matches as $match){
             $full_tag = $match[0];
             $property = $match[1];
-            $text = str_replace($full_tag, $url_encode ? urlencode($user_array[$property]) : $user_array[$property], $text);
+
+            $value = version_compare($wp_version, '3.3', '>=') ? $current_user->get($property) : $user_array[$property];
+            $value = $url_encode ? urlencode($value) : $value;
+
+            $text = str_replace($full_tag, $value, $text);
         }
 
         return $text;
