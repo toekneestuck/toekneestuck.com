@@ -46,7 +46,8 @@ get_header(); ?>
 
 				<header class="center">
 					<hgroup>
-						<h2>Work <span class="separator">hard</span> Play <span class="separator">harder</span></h2>
+						<h2>
+							<?php _e('Work', 'toeknee') ?> <span class="separator"><?php _e('hard', 'toeknee') ?></span> <?php _e('Play', 'toeknee') ?> <span class="separator"><?php _e('harder', 'toeknee') ?></span></h2>
 						<h6 class="subheadline"><?php echo esc_attr( get_field('subheadline') ) ?></h6>
 					</hgroup>
 				</header>
@@ -72,8 +73,8 @@ get_header(); ?>
 			<div class="goals-table">
 				<div class="legend">
 					<span class="little"></span>
-					<span class="big" data-content="Goals">Goals</span>
-					<span class="little" data-content="in life"><span>in life</span></span>
+					<span class="big" data-content="<?php _e('Goals', 'toeknee') ?>"><?php _e('Goals', 'toeknee') ?></span>
+					<span class="little" data-content="<?php _e('in life', 'toeknee') ?>"><span><?php _e('in life', 'toeknee') ?></span></span>
 				</div>
 				<div class="goals">
 					<div class="goal yes-please">

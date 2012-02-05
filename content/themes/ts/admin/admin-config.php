@@ -29,9 +29,33 @@ function toeknee_init(){
 	/** CUSTOM ADMIN STYLES **/
 	wp_enqueue_style('toeknee_admin', home_url( get_bloginfo('template_url') . '/admin/admin-styles.css' ) );
 	
+	// Default to two years
 	add_option( 'project_archive_threshold_date', date('m/d/Y', (time() - ( 2 * 52 * 7 * 24 * 60 * 60)) ) );
-	add_settings_field( 'project_archive_threshold_date', __('Project Archive Threshold Date', 'toeknee'), 'toeknee_add_project_threshold_date', 'reading' );
+	add_option( 'project_subheadline', '' );
+	add_option( 'project_archive_headline', '' );
+	add_option( 'project_archive_subheadline', '' );
+
+	add_settings_section('projects', _x('Project Options', 'toeknee'), 'toeknee_add_project_section', 'reading' );
+
+	add_settings_field( 'project_archive_threshold_date', _x('Archive Threshold Date', 'toeknee'), 'toeknee_add_project_threshold_date', 'reading', 'projects' );
+	add_settings_field( 'project_subheadline', _x('Sub-headline', 'toeknee'), 'toeknee_add_project_subheadline', 'reading', 'projects' );
+	add_settings_field( 'project_archive_headline', _x('Archive Headline', 'toeknee'), 'toeknee_add_project_archive_headline', 'reading', 'projects' );
+	add_settings_field( 'project_archive_subheadline', _x('Archive Sub-headline', 'toeknee'), 'toeknee_add_project_archive_subheadline', 'reading', 'projects' );
+	
 	register_setting('reading', 'project_archive_threshold_date');
+	register_setting('reading', 'project_subheadline');
+	register_setting('reading', 'project_archive_headline');
+	register_setting('reading', 'project_archive_subheadline');
+}
+
+/*
+ * Outputs settings fields
+ *
+ * @uses get_option
+ */
+
+function toeknee_add_project_section(){
+	
 }
 
 function toeknee_add_project_threshold_date(){
@@ -39,6 +63,22 @@ function toeknee_add_project_threshold_date(){
 	echo "<input type='text' name='project_archive_threshold_date' id='project_archive_threshold_date' size='40' value='$text' />";
 	echo "<small class='nonessential'>Format: MM/DD/YYYY</small>";
 }
+
+function toeknee_add_project_archive_headline(){
+	$headline = get_option('project_archive_headline');
+	echo "<input type='text' class='widefat' name='project_archive_headline' id='project_archive_headline' size='100' value='$headline' />";
+}
+
+function toeknee_add_project_archive_subheadline(){
+	$subheadline = get_option('project_archive_subheadline');
+	echo "<input type='text' class='widefat' name='project_archive_subheadline' id='project_archive_subheadline' size='100' value='$subheadline' />";
+}
+
+function toeknee_add_project_subheadline(){
+	$subheadline = get_option('project_subheadline');
+	echo "<input type='text' class='widefat' name='project_subheadline' id='project_subheadline' size='100' value='$subheadline' />";
+}
+
 
 /**
  * Adds the number of published publications to the dashboard

@@ -25,7 +25,9 @@ foreach( $posts as $key=>$post ){
 	<header class="container">
 		<hgroup class="center">
 			<h1><?php _e('Portfolio', 'toeknee'); ?></h1>
-			<h2 class="h4 subheadline"><?php _e('These are the things I make.', 'toeknee'); ?></h2>
+		<?php if( $subheadline = get_option('project_subheadline') ): ?>
+			<h2 class="h4 subheadline"><?php _e($subheadline, 'toeknee'); ?></h2>
+		<?php endif; ?>
 		</hgroup>
 		<hr />
 	</header>
@@ -43,8 +45,12 @@ foreach( $posts as $key=>$post ){
 
 	<?php if( count($old_posts) > 0 ): ?>
 		<hgroup class="center">
-			<h3 class="headline"><?php _e("The Seriously Old Stuff", 'toeknee') ?></h3>
-			<h6 class="subheadline"><?php _e("I decided not to let these projects die a silent, binary death,<br />so here are some of the older and/or less web-related things I've done in the distant past.", 'toeknee') ?></h6>
+		<?php if( $archive_headline = get_option('project_archive_headline') ): ?>
+			<h3 class="headline"><?php _e($archive_headline, 'toeknee') ?></h3>
+		<?php endif; ?>
+		<?php if( $archive_subheadline = get_option('project_archive_subheadline') ): ?>
+			<h6 class="subheadline"><?php _e($archive_subheadline, 'toeknee') ?></h6>
+		<?php endif; ?>
 		</hgroup>
 
 		<ul id="old_posts">
