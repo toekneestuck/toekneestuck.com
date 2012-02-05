@@ -1,0 +1,11 @@
+wp-*
+xmlrpc*
+license*
+readme*
+content/uploads/*
+content/upgrade/*
+.DS_Store
+.htaccess
+local-config.php
+debug.log
+.svn/*
