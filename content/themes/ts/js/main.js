@@ -7,7 +7,7 @@
 // @codekit-prepend plugins/jquery.sap.min.js
 
 
-Modernizr.addTest('cssmask', Modernizr.testAllProps('mask'));
+Modernizr.addTest( 'cssmask', Modernizr.testAllProps('mask') );
 
 $(document).ready(function(){
 
@@ -16,7 +16,10 @@ $(document).ready(function(){
 		window.prettyPrint();
 
 	// Social links get special settings
-	$('#header .social a').twipsy({ placement : 'below', offset: 5 });
+	$('#header .social a').twipsy({
+		placement : 'below',
+		offset : 5
+	});
 
 	$('[data-twipsy]').each(function(){
 		$(this).twipsy({
@@ -29,8 +32,8 @@ $(document).ready(function(){
 	if( Modernizr.mq('screen and (min-width: 57em)') && !Modernizr.touch ){
 		$('.project-nav-container').hoverIntent({
 			sensitivity: 30,
-			over : function(e){ $(this).stop().animate({height: $('.container', this).outerHeight() }, 'fast') },
-			out : function(e){ $(this).stop().animate({height: '2.5em' }, 'fast') }
+			over : function(e){ $(this).stop().animate({height: $('.container', this).outerHeight() }, 'fast'); },
+			out : function(e){ $(this).stop().animate({height: '2.5em' }, 'fast'); }
 		}).sap({
 			width:'100%',
 			distanceFromTheTop: $('#header .bar').height()
@@ -256,7 +259,7 @@ $(document).ready(function(){
 
 		var v = {
 			history : null,
-			title : '',
+			title : ''
 		};
 
 		function formatTitle( title ){
@@ -267,7 +270,10 @@ $(document).ready(function(){
 		return {
 			bind : function(event, f){ return v.history.Adapter.bind(window, event, f) },
 			getState : function(){ return v.history.getState() },
-			push : function(data, title, url){ v.history.pushState(data, title, url) },
+			push : function(data, title, url){
+				v.history.pushState(data, title, url);
+				if( !!window._gaq ) _.gaq.push(['_trackPageview', url]);
+			},
 			replace : function(data, title, url){ v.history.replaceState(data, title, url) },
 			back : function(){ v.history.back() },
 			go : function(state){ v.history.go(state) },
