@@ -272,7 +272,7 @@ $(document).ready(function(){
 			getState : function(){ return v.history.getState() },
 			push : function(data, title, url){
 				v.history.pushState(data, title, url);
-				if( !!window._gaq ) _.gaq.push(['_trackPageview', url]);
+				if( !!window._gaq ) _gaq.push(['_trackPageview']);
 			},
 			replace : function(data, title, url){ v.history.replaceState(data, title, url) },
 			back : function(){ v.history.back() },

@@ -3,6 +3,7 @@ xmlrpc*
 license*
 content/uploads/*
 content/upgrade/*
+content/plugins/*
 .DS_Store
 .htaccess
 local-config.php
