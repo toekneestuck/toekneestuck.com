@@ -623,7 +623,7 @@ body{
 	}
 
 	.logo{
-		background: transparent url(../../assets/plaid.jpg) repeat top left;
+		background: lighten(@green, 30%) url(../../assets/plaid.jpg) repeat top left;
 		border-bottom: 1px solid @dgreen;
 		border-top: 1px solid lighten(@green, 30%);
 
@@ -745,6 +745,9 @@ article{
 	}
 }
 header{
+	margin-bottom: 16/@em;
+}
+.featured-image{
 	margin-bottom: 16/@em;
 }
 section.collection{
@@ -2155,6 +2158,10 @@ section.collection{
 		width: @16cols;
 	}
 
+	#header .container{
+		width: @14cols;
+	}
+
 	.primary{
 		width: @12cols;
 	}
@@ -2239,7 +2246,8 @@ section.collection{
 		}
 	}
 
-	.post{
+	.post,
+	.blog{
 		.container,
 		.main{
 			width: @14cols;

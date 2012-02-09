@@ -36,6 +36,12 @@ get_header(); ?>
 				</div>
 			</header>
 
+			<?php if( has_post_thumbnail() ): ?>
+			<div class="featured-image">
+				<?php the_post_thumbnail(); ?>
+			</div>
+			<?php endif; ?>
+
 			<div class="entry-content">
 				<?php the_content(); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toeknee' ), 'after' => '</div>' ) ); ?>

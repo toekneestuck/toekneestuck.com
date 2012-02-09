@@ -79,6 +79,7 @@ if( is_blog_admin() )
  *
  */
 function toeknee_setup(){
+	global $content_width;
 
 	show_admin_bar(false);
 	add_editor_style();
@@ -89,7 +90,8 @@ function toeknee_setup(){
 
 	register_nav_menus( array('primary' => __( 'Primary Navigation', 'toeknee' )) );
 
-	set_post_thumbnail_size(300, 400);
+	set_post_thumbnail_size($content_width, 900);
+	add_image_size('blog-thumb', $content_width, 300, true);
 	add_image_size('portfolio-thumb', 250, 125, true);
 	add_image_size('portfolio', 844, 1500);
 }

@@ -17,10 +17,20 @@
 	</header>
 
 <?php if ( ! is_single() ) : // Display excerpts for everything except the full page. ?>
+	<?php if( has_post_thumbnail() ): ?>
+	<div class="featured-image">
+		<?php the_post_thumbnail('blog-thumb'); ?>
+	</div>
+	<?php endif; ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- /.entry-summary -->
 <?php else : ?>
+	<?php if( has_post_thumbnail() ): ?>
+	<div class="featured-image">
+		<?php the_post_thumbnail(); ?>
+	</div>
+	<?php endif; ?>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toeknee' ), 'after' => '</div>' ) ); ?>
