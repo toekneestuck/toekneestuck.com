@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <article class="main center clearfix" role="main">
-	<h1>This page was unintentionally left blank.</h1>
-	<p>Sowwy. Try going back <a href="<?php echo home_url() ?>">home &raquo;</a></p>
+	<h1><?php _e('This page was unintentionally left blank.', 'toeknee') ?></h1>
+	<p><?php _e('Sowwy. Try going back', 'toeknee') ?> <a href="<?php echo home_url() ?>"><?php _e('home', 'toeknee') ?> &raquo;</a></p>
 </article><!-- /.main -->
 <?php get_footer(); ?>
