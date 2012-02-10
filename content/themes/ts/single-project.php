@@ -72,7 +72,7 @@ if( have_posts() ) while ( have_posts() ) : the_post();
 					<h2 class="title"><?php echo $current_image['title'] ?></h2>
 					<div class="description">
 						<?php echo $current_image['desc']; ?>
-						<?php if( !empty($url) ): ?><p><a href="<?php echo $url ?>" class="button">View the Site &raquo;</a></p><?php endif ?>
+						<?php if( !empty($url) ): ?><p><a href="<?php echo $url ?>" class="button" target="_blank">View the Site &raquo;</a></p><?php endif ?>
 					</div>
 				</div><!-- /#details -->
 				<?php endif; ?>
@@ -88,7 +88,7 @@ if( have_posts() ) while ( have_posts() ) : the_post();
 		<h2 class="title"><%=title %></h2>
 		<div class="description">
 			<%=desc %>
-			<?php if( !empty($url) ): ?><p><a href="<?php echo $url ?>" class="button">View the Site &raquo;</a></p><?php endif ?>
+			<?php if( !empty($url) ): ?><p><a href="<?php echo $url ?>" class="button" target="_blank">View the Site &raquo;</a></p><?php endif ?>
 		</div>
 	</div>
 </script>
