@@ -44,7 +44,10 @@ if( have_posts() ) while( have_posts() ): the_post(); ?>
 						<?php the_excerpt() ?>
 					</div>
 					<footer>
-						<span class="entry-date"><?php toeknee_the_date();?></span> in <span class="entry-category"><?php echo get_the_category_list( ', ' ); ?></span> &bull; 
+						<span class="entry-date"><?php toeknee_the_date();?></span> in <span class="entry-category"><?php 
+							$cats = get_the_category(); 
+							echo '<a href="'.get_category_link( $cats[0]->term_id ).'">' . $cats[0]->cat_name . '</a>';
+						?></span> &bull; 
 						<span class="comments-link"><?php 
 							comments_popup_link( 
 								__( '0', 'toeknee' ), 

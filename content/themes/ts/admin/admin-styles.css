@@ -1,2 +1,9 @@
 .fixed .column-project_type{width:18%}
 .fixed .column-featured{width:6em}
+
+@media (min-width:1332px){
+     #widget-list .widget:nth-child(3n+1){clear:left;}
+}
+@media (min-width:1077px and max-width:1331px){
+     #widget-list .widget:nth-child(2n+1){clear:left;}
+}
