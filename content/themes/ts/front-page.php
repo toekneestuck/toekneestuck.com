@@ -26,23 +26,35 @@ if( have_posts() ) while( have_posts() ): the_post(); ?>
 			<?php
 				$total = 4;
 				$latest_posts = get_posts( array('numberposts' => $total) );
+
 				foreach( $latest_posts as $key=>$post ): 
+
 					setup_postdata($post);
+					$title = get_the_title();
 			?>
 			<li>
 				<article <?php post_class() ?>>
+
+				<?php if( !empty( $title ) ): ?>
 					<header>
 						<h2 class="title"><?php  
 							printf('<a href="%1$s" title="%2$s">%3$s</a>',
 								get_permalink(),
 								sprintf( esc_attr__( 'Permalink to %s', 'toeknee' ), the_title_attribute( 'echo=0' )),
-								get_the_title()
+								$title
 							);
 						?></h2>
 					</header>
+				<?php endif; ?>
+
 					<div class="entry-summary">
+					<?php if( empty( $title ) ): ?>
+						<a href="<?php the_permalink() ?>"><?php the_excerpt() ?></a>
+					<?php else: ?>
 						<?php the_excerpt() ?>
+					<?php endif; ?>
 					</div>
+
 					<footer>
 						<span class="entry-date"><?php toeknee_the_date();?></span> in <span class="entry-category"><?php 
 							$cats = get_the_category(); 
