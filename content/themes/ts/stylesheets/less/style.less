@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'css/normalize-start';
-@import 'bootstrap/mixins';
+@import 'css/bootstrap/mixins';
 @import 'css/less-mixins';
 @import 'css/frameless';
 @import 'twipsy';
@@ -476,7 +476,7 @@ hr{
 
 .wf-loading{
 	body{
-		background: transparent url(../../assets/ajax-loader.gif) no-repeat center 200px; // Fallback
+		background: transparent url(../../assets/ajax-loader.gif) no-repeat center 200px;
 		background: transparent url(../../assets/ajax-loader.gif) no-repeat center 200px, #f6f6f6 url(../../assets/cork.jpg) repeat 0 0;
 	}
 	.content-wrapper{
@@ -697,14 +697,21 @@ article{
 	li{
 		padding: 4/@em 0;
 	}
-
-	.entry-meta{
-		font-weight: @thin;
+}
+.entry-meta{
+	font-weight: @thin;
+}
+.entry-content{
+	a{
+		border-bottom: 1px solid @red_active;
 	}
-	.entry-content{
-		a{
-			border-bottom: 1px solid @red_active;
-		}
+	.right,
+	.alignright{
+		margin: 0 0 8/@em 8/@em;
+	}
+	.left,
+	.alignleft{
+		margin: 0 8/@em 8/@em 0;
 	}
 }
 .generatedcontent{
@@ -807,6 +814,7 @@ section.collection{
 		&:before{
 			color: #f6f6f6;
 			content: '\2022  ';
+			padding-right: 8/@em;
 			.text-shadow(-1px -1px 0 darken(@tag_color, 10%));
 		}
 		&:hover{
