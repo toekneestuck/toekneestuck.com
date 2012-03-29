@@ -165,8 +165,8 @@ article{margin-bottom:2em;}article footer{font-size:0.8125em;line-height:1.25em;
 article li{padding:0.25em 0;}
 .entry-meta{font-weight:100;}
 .entry-content a{border-bottom:1px solid #ec4f24;}
-.entry-content .right, .entry-content .alignright{margin:0 0 0.5em 0.5em;}
-.entry-content .left, .entry-content .alignleft{margin:0 0.5em 0.5em 0;}
+.entry-content .right, .entry-content .alignright{margin:0 0 1em 1em;}
+.entry-content .left, .entry-content .alignleft{margin:0 1em 1em 0;}
 .generatedcontent article ol{counter-reset:numbers 0;padding-left:3em;}.generatedcontent article ol li{list-style:none;position:relative;}.generatedcontent article ol li:before{border:1px dashed #999999;content:counter(numbers);counter-increment:numbers;height:1.5em;left:-2.25em;position:absolute;text-align:center;top:0.25em;width:1.5em;-webkit-border-radius:0.75em;-moz-border-radius:0.75em;border-radius:0.75em;-webkit-border-radius:0.75em;-moz-border-radius:0.75em;border-radius:0.75em;-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box;}
 .generatedcontent pre ol{position:static;}.generatedcontent pre ol li{list-style:decimal;}.generatedcontent pre ol li:before{display:none;}
 header{margin-bottom:1em;}
