@@ -175,7 +175,7 @@ function toeknee_add_scripts(){
 
 		wp_enqueue_script('typekit', TYPEKIT_URL, null);
 		wp_enqueue_script('modernizr', home_url( get_bloginfo('template_url') . '/js/libs/modernizr.prod.min.js' ), null );
-		wp_enqueue_script('main', home_url( get_bloginfo('template_url') . '/js/min/main.min.js' ), null, '1.0', true);
+		wp_enqueue_script('main', home_url( get_bloginfo('template_url') . '/js/min/main.min.js' ), null, '1.1', true);
 
 		if ( is_single() ){
 			wp_enqueue_script('addthis', 'http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f2ede3b3d2c13ae', null, null, true);
