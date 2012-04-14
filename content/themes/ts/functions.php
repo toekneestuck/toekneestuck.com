@@ -44,6 +44,10 @@ add_filter( 'body_class', 'toeknee_body_classes' );
 add_filter( 'wp_get_attachment_link', 'toeknee_wp_get_attachment_link', 10, 6 );
 add_filter( 'the_posts', 'check_for_prettify' );
 add_filter( 'editor_max_image_size', 'allow_custom_image_sizes', 10, 2 );
+add_filter( 'the_excerpt_rss', 'rss_post_thumbnail' );
+add_filter( 'the_content_feed', 'rss_post_thumbnail' );
+add_filter( 'post_thumbnail_html', 'post_thumbnail_picturefill', 10, 5 );
+
 
 /**
  * Add Harboring Hearts Logo to the login screen
@@ -395,6 +399,49 @@ function toeknee_wp_get_attachment_link( $link, $id, $size, $permalink, $icon, $
 		$link = str_replace("<a", "<a data-id='$id' data-action='$action'", $link);
 	}
 	return $link;
+}
+
+/**
+ * Add Post Thumbnail to RSS Feed
+ *
+ * @uses has_post_thumbnail
+ * @uses get_the_post_thumbnail
+ * @uses get_the_content
+ */
+function rss_post_thumbnail( $content ){
+	global $post;
+
+	if( has_post_thumbnail( $post->ID ) ){
+		$content = '<p>' . get_the_post_thumbnail($post->ID) . '</p>' . $content;
+	}
+
+	return $content;
+}
+
+/**
+ *
+ */
+function post_thumbnail_picturefill( $html, $post_id, $post_thumbnail_id, $size, $attr ){
+
+	$alt = preg_match('/alt="(.*)"/', $html, $matches);
+	$picture_fill_html = '<picture alt="'. $matches[1] .'">';
+
+	$small = wp_get_attachment_image_src( $post_thumbnail_id, 'small' );
+	$picture_fill_html .= '<!-- <source src="' . $small[0] . '"> -->';
+	$picture_fill_html .= '<source src="' . $small[0] . '">';
+
+	$normal = wp_get_attachment_image_src( $post_thumbnail_id, $size );
+	$picture_fill_html .= '<!-- <source src="' . $normal[0] . '" media="(min-width:480px)"> -->';
+	$picture_fill_html .= '<source src="' . $normal[0] . '" media="(min-width:480px)">';
+
+	$large = wp_get_attachment_image_src( $post_thumbnail_id, 'large' );
+	$picture_fill_html .= '<!-- <source src="' . $large[0] . '" media="(-webkit-min-device-pixel-ratio:2 and min-width:480px)"> -->';
+	$picture_fill_html .= '<source src="' . $large[0] . '" media="(-webkit-min-device-pixel-ratio:2 and min-width:480px)">';
+
+	$picture_fill_html .= '<noscript>' . $html . '</noscript>';
+	$picture_fill_html .= '</picture>';
+
+	return $picture_fill_html;
 }
 
 /**

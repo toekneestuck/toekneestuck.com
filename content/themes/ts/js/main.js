@@ -5,6 +5,7 @@
 // @codekit-prepend libs/history.min.js
 // @codekit-prepend plugins/history.html4.min.js
 // @codekit-prepend plugins/jquery.sap.min.js
+// @codekit-prepend plugins/picturefill.js
 
 
 Modernizr.addTest( 'cssmask', Modernizr.testAllProps('mask') );
