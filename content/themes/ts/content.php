@@ -19,7 +19,7 @@
 <?php if ( ! is_single() ) : // Display excerpts for everything except the full page. ?>
 	<?php if( has_post_thumbnail() ): ?>
 	<div class="featured-image">
-		<?php the_post_thumbnail('blog-thumb'); ?>
+		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('blog-thumb'); ?></a>
 	</div>
 	<?php endif; ?>
 	<div class="entry-summary">
