@@ -2303,5 +2303,25 @@ section.collection{
 */
 
 
+/* ================================================= */
+/* Retina Displays
+/* ================================================= */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (-moz-min-device-pixel-ratio: 2),
+screen and (min-device-pixel-ratio: 2){
+
+	#header #logo a{
+		background-image: url(../../assets/logo_toekneestuck_2x.png);
+		background-size: 280px 50px;
+		-moz-background-size: 280px 50px;
+	}
+	.social a span{
+		background-image: url(../../assets/social-icons_2x.png);
+		background-size: 440px 44px;
+		-moz-background-size: 440px 44px;
+	}
+}
+
 /** Add clearfix, print, and other helpers **/
 @import 'css/normalize-end';

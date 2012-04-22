@@ -122,7 +122,7 @@ function toeknee_remove_project_page_limit( $query ){
  */
 function toeknee_add_styles(){
 	if( !is_blog_admin() ){
-		wp_enqueue_style('toeknee', home_url( get_bloginfo('template_url') . '/stylesheets/css/style.css' ), null, 1.11, 'screen,projection');
+		wp_enqueue_style('toeknee', home_url( get_bloginfo('template_url') . '/stylesheets/css/style.css' ), null, 1.16, 'screen,projection');
 
 		//global $wp_styles;
 		//$wp_styles->add_data('1140_ie', 'conditional', 'lte IE 9');
@@ -419,14 +419,16 @@ function rss_post_thumbnail( $content ){
 }
 
 /**
+ * Replace normal <img> tag with custom <picture> polyfill element for responsive images
  *
+ * @uses wp_get_attachment_image_src
  */
 function post_thumbnail_picturefill( $html, $post_id, $post_thumbnail_id, $size, $attr ){
 
 	$alt = preg_match('/alt="(.*)"/', $html, $matches);
 	$picture_fill_html = '<picture alt="'. $matches[1] .'">';
 
-	$small = wp_get_attachment_image_src( $post_thumbnail_id, 'small' );
+	$small = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );
 	$picture_fill_html .= '<!-- <source src="' . $small[0] . '"> -->';
 	$picture_fill_html .= '<source src="' . $small[0] . '">';
 
