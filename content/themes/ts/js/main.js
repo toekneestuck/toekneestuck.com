@@ -7,44 +7,54 @@
 // @codekit-prepend plugins/jquery.sap.min.js
 // @codekit-prepend plugins/picturefill.js
 
+window.TS = {};
+window.Modernizr = window.Modernizr || {};
+window.Modernizr.addTest( 'cssmask', Modernizr.testAllProps('mask') );
 
-Modernizr.addTest( 'cssmask', Modernizr.testAllProps('mask') );
+(function(ns, $, Modernizr, window){
 
-$(document).ready(function(){
+	$(document).ready(function(){
 
+		if( !!window.prettyPrint ){
+			window.prettyPrint();
+		}
 
-	if( !!window.prettyPrint )
-		window.prettyPrint();
-
-	// Social links get special settings
-	$('#header .social a').twipsy({
-		placement : 'below',
-		offset : 5
-	});
-
-	$('[data-twipsy]').each(function(){
-		$(this).twipsy({
-			placement : $(this).data('tooltip-align') || 'above',
-			offset: $(this).data('tooltip-offset') || 0
+		// Social links get special settings
+		$('#header .social a').twipsy({
+			placement : 'below',
+			offset : 5
 		});
-	});
 
-	// Widescreen only
-	if( Modernizr.mq('screen and (min-width: 57em)') && !Modernizr.touch ){
-		$('.project-nav-container').hoverIntent({
-			sensitivity: 30,
-			over : function(e){ $(this).stop().animate({height: $('.container', this).outerHeight() }, 'fast'); },
-			out : function(e){ $(this).stop().animate({height: '2.5em' }, 'fast'); }
-		}).sap({
-			width:'100%',
-			distanceFromTheTop: $('#header .bar').height()
+		$('[data-twipsy]').each(function(){
+			$(this).twipsy({
+				placement : $(this).data('tooltip-align') || 'above',
+				offset: $(this).data('tooltip-offset') || 0
+			});
 		});
-		
-		$('#header .bar').sap({width:'100%'});
-	}
+
+		// Widescreen only
+		if( Modernizr.mq('screen and (min-width: 57em)') && !Modernizr.touch ){
+			$('.project-nav-container').hoverIntent({
+				sensitivity: 30,
+				over : function(e){ $(this).stop().animate({height: $('.container', this).outerHeight() }, 'fast'); },
+				out : function(e){ $(this).stop().animate({height: '2.5em' }, 'fast'); }
+			}).sap({
+				width:'100%',
+				distanceFromTheTop: $('#header .bar').height()
+			});
+
+			$('#header .bar').sap({width:'100%'});
+		}
+
+		ns.history = ns.History();
+		ns.project = ns.Project();
+
+		ns.history.init();
+		ns.project.init();
+	});
 
 	/** Single Project Pages **/
-	$.Project = function(){
+	ns.Project = function(){
 
 		var v = {
 			title : '',
@@ -111,15 +121,15 @@ $(document).ready(function(){
 
 			// Replace the initial history state with the current, so we
 			// can grab state data when the user goes back to the original
-			$history.replace({
+			ns.history.replace({
 				id : v.currentID,
 				title : $('.title', v.container).text(),
 				desc : $('.description', v.container).html(),
 				html : $('.display', v.container).html()
 			}, window.title, window.location.href);
 
-			$history.bind('statechange', function(){
-				var state = $history.getState();
+			ns.history.bind('statechange', function(){
+				var state = ns.history.getState();
 				if( !_.isEmpty(state.data) ) updatePage(state.data);
 			});
 		}
@@ -148,7 +158,7 @@ $(document).ready(function(){
 				data : {
 					action: $(element).data('action'),
 					id: $(element).data('id'),
-					href: $(element).data('href') 
+					href: $(element).data('href')
 				},
 				success : function(data){ success( data, element ) }
 			});
@@ -158,7 +168,7 @@ $(document).ready(function(){
 		function success( data, element ){
 
 			if( ! data.error && parseInt(data) != -1 ){
-				$history.push( data, $history.formatTitle(data.title), $(element).prop('href') );
+				ns.history.push( data, ns.history.formatTitle(data.title), $(element).prop('href') );
 			}else{
 				console.log( data );
 			}
@@ -222,15 +232,15 @@ $(document).ready(function(){
 		}
 
 		function ajaxError(event, xhr, settings, error){
-			
+
 		}
 
 		function ajaxComplete(event, xmlhttp, settings){
-			
+
 		}
 
 		function ajaxSuccess(event, xmlhttp, settings){
-			
+
 		}
 
 		function ajaxStart(){
@@ -256,7 +266,7 @@ $(document).ready(function(){
 
 
 	// Object to track the visitors JS history
-	$.History = function(){
+	ns.History = function(){
 
 		var v = {
 			history : null,
@@ -289,16 +299,4 @@ $(document).ready(function(){
 		}
 	};
 
-	$history = $.History();
-	$project = $.Project();
-	
-	$history.init();
-	$project.init();
-});
-
-
-
-// Custom Capitalize function
-String.prototype.capitalize = function() {
-	return this.charAt(0).toUpperCase() + this.slice(1);
-}
+})(window.TS, jQuery, window.Modernizr, window);

@@ -26,6 +26,7 @@
 <link rel="apple-touch-icon" sizes="114x114" href="<?php echo home_url(get_bloginfo('template_url')); ?>/img/apple-touch-icon-iphone4.png" />
 -->
 <?php wp_head(); ?>
+<script defer type="text/javascript" src="<?php echo home_url( get_bloginfo('template_url') . '/js/libs/modernizr.prod.min.js' ) ?>"></script>
 <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>

@@ -173,9 +173,7 @@ function toeknee_add_scripts(){
 		wp_deregister_script('jquery');
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', '1.7.1');
 
-		wp_enqueue_script('typekit', TYPEKIT_URL, null);
-		wp_enqueue_script('modernizr', home_url( get_bloginfo('template_url') . '/js/libs/modernizr.prod.min.js' ), null );
-		wp_enqueue_script('main', home_url( get_bloginfo('template_url') . '/js/min/main.min.js' ), null, '1.1', true);
+		wp_enqueue_script('typekit', TYPEKIT_URL, null); // We can't add defer or async to this, so might as well load it through here
 
 		if ( is_single() ){
 			wp_enqueue_script('addthis', 'http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f2ede3b3d2c13ae', null, null, true);

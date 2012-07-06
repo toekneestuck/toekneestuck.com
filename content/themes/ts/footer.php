@@ -25,7 +25,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <?php endif; ?>
 <script type="text/javascript">if( !jQuery ){document.write(unescape("%3Cscript type='text/javascript' src='<?php echo home_url( get_bloginfo('template_url') . '/js/libs/jquery-1.7.1.min.js' ); ?>'%3E%3C/script%3E"));}</script>
-
+<script defer type="text/javascript" src="<?php echo home_url( get_bloginfo('template_url') . '/js/min/main.min.js' ) ?>"></script>
 <?php wp_footer(); ?>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
