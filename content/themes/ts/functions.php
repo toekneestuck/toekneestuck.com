@@ -122,7 +122,7 @@ function toeknee_remove_project_page_limit( $query ){
  */
 function toeknee_add_styles(){
 	if( !is_blog_admin() ){
-		wp_enqueue_style('toeknee', home_url( get_bloginfo('template_url') . '/stylesheets/css/style.css' ), null, 1.16, 'screen,projection');
+		wp_enqueue_style('toeknee', home_url( get_bloginfo('template_url') . '/stylesheets/css/style.css' ), null, 1.17, 'screen,projection');
 
 		//global $wp_styles;
 		//$wp_styles->add_data('1140_ie', 'conditional', 'lte IE 9');
@@ -171,7 +171,7 @@ function allow_custom_image_sizes( $max_size, $original_size ){
 function toeknee_add_scripts(){
 	if( !is_blog_admin() ){
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', '1.7.1');
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js', '1.8.1');
 
 		wp_enqueue_script('typekit', TYPEKIT_URL, null); // We can't add defer or async to this, so might as well load it through here
 

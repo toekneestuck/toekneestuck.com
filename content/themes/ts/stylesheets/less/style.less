@@ -1,9 +1,9 @@
 @import 'variables';
-@import 'css/normalize-start';
-@import 'css/bootstrap/mixins';
-@import 'css/less-mixins';
-@import 'css/frameless';
+@import 'includes/normalize-start';
+@import 'includes/bootstrap.mixins';
+@import 'includes/frameless';
 @import 'twipsy';
+
 
 ::selection,
 ::-moz-selection{
@@ -450,7 +450,7 @@ hr{
 		border-width: 2px; /* Weird WebKit bug - Chrome 18 */
 		color: @white;
 		.text-shadow(none);
-		
+
 		&:hover{
 			border-color: @green;
 		}
@@ -499,7 +499,7 @@ body{
 	background: #f6f6f6 url(../../assets/cork.jpg) repeat 0 0;
 }
 .content-wrapper{
-	.transition(all .25s ease);	
+	.transition(all .25s ease);
 }
 .standard-width,
 .container,
@@ -619,7 +619,7 @@ body{
 		width: 100%;
 		z-index: 1000;
 
-		.vertical-gradient(@dgray, #000);
+		#gradient > .vertical(@dgray, #000);
 	}
 
 	.logo{
@@ -1202,14 +1202,21 @@ section.collection{
 	margin: 24/@em 0 32/@em;
 	padding: 0;
 
-	.comment{
+	.comment,
+	.pingback{
 		padding: 8/@em;
 		position: relative;
 
-		&+.comment{
+		&+*{
 			margin-top: 16/@em;
 		}
+	}
 
+	.pingback{
+		font-size: 12/@em;
+	}
+
+	.comment{
 		.children{
 			list-style: none;
 			margin: 8/@em 0 0 32/@em;
@@ -1426,7 +1433,7 @@ section.collection{
 		.title{
 			line-height: 1.2;
 			margin-top: 2/@em;
-			
+
 			a:hover{
 				border: none;
 			}
@@ -1460,7 +1467,7 @@ section.collection{
 	overflow: hidden;
 	position: relative;
 	z-index: 100;
-	
+
 	&:before{
 		background: transparent url(../../assets/project-nav-cork-gradient.png) repeat-x left bottom;
 		bottom: 0;
@@ -1473,11 +1480,11 @@ section.collection{
 		width: 100%;
 		z-index: 10;
 	}
-	
+
 	&.sappy{
 		.box-shadow(0 5px 10px fadeout(@black, 60%));
 	}
-	
+
 	.container{
 		padding: 16/@em 0;
 	}
@@ -1569,7 +1576,7 @@ section.collection{
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	textarea.small{
 		height: 200/@em;
 	}
@@ -1619,7 +1626,7 @@ section.collection{
 	color: @white;
 	margin: 8/@em 0;
 	padding: 8/@em 10/@em;
-	
+
 	.border-radius(3px);
 }
 #gforms_confirmation_message{
@@ -1756,7 +1763,7 @@ section.collection{
 			}
 		}
 	}
-	
+
 	.greeting{
 		padding: 16/@em 0;
 
@@ -1946,10 +1953,10 @@ section.collection{
 			display: block;
 		}
 	}
-	
+
 	.greeting{
 		padding: 40/@em 0;
-	
+
 		h1{
 			font-size: 68/@em;
 		}
@@ -2033,11 +2040,12 @@ section.collection{
 			width: 33.33333333%;
 		}
 	}
-	
+
 	#header{
 		.bar{
 			position: relative; // Fallback
 			position: fixed;
+			position: sticky; // For those that support it
 		}
 		.logo{
 			padding-top: 32/@em;
@@ -2124,7 +2132,7 @@ section.collection{
 	.touch{
 		.project-nav-container{
 			height: auto;
-			
+
 			.project-nav{
 				&:before,
 				&:after{
@@ -2324,4 +2332,4 @@ screen and (min-device-pixel-ratio: 2){
 }
 
 /** Add clearfix, print, and other helpers **/
-@import 'css/normalize-end';
+@import 'includes/normalize-end';
