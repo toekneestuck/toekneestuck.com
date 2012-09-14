@@ -122,7 +122,7 @@ function toeknee_remove_project_page_limit( $query ){
  */
 function toeknee_add_styles(){
 	if( !is_blog_admin() ){
-		wp_enqueue_style('toeknee', home_url( get_bloginfo('template_url') . '/stylesheets/css/style.css' ), null, 1.17, 'screen,projection');
+		wp_enqueue_style('toeknee', home_url( get_bloginfo('template_url') . '/stylesheets/css/style.css' ), null, 1.18, 'screen,projection');
 
 		//global $wp_styles;
 		//$wp_styles->add_data('1140_ie', 'conditional', 'lte IE 9');
