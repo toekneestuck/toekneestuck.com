@@ -1,11 +1,12 @@
-// @codekit-prepend js/underscore.min.js
-// @codekit-prepend js/bootstrap-twipsy.js
+// @codekit-prepend js/underscore/underscore-1.3.3.dev.js
+// @codekit-prepend js/bootstrap-v1.4/bootstrap.v1.4.twipsy.js
 // @codekit-prepend plugins/hover-intent.js
 // @codekit-prepend plugins/jquery.history.adapter.min.js
 // @codekit-prepend libs/history.min.js
 // @codekit-prepend plugins/history.html4.min.js
 // @codekit-prepend plugins/jquery.sap.min.js
 // @codekit-prepend plugins/picturefill.js
+// @codekit-prepend plugins/jquery.fitvids.js
 
 window.TS = {};
 window.Modernizr = window.Modernizr || {};
@@ -31,6 +32,8 @@ window.Modernizr.addTest( 'cssmask', Modernizr.testAllProps('mask') );
 				offset: $(this).data('tooltip-offset') || 0
 			});
 		});
+
+		$('.entry-content').fitVids();
 
 		// Widescreen only
 		if( Modernizr.mq('screen and (min-width: 57em)') && !Modernizr.touch ){

@@ -147,6 +147,7 @@ h2+h4,
 h3+h5{margin-top:0.45em}
 
 a{
+	border-bottom: 0.1em solid transparent;
 	color: @burgundy;
 	text-decoration: none;
 	.transition(all 0.125s ease);
@@ -154,7 +155,7 @@ a{
 	&:hover{
 		background:rgba(255,255,255,0.2);
 		color: @burgundy;
-		border-bottom:0.1em solid @red_active;
+		border-bottom-color: @red_active;
 	}
 	&:focus,
 	&:active{
@@ -264,8 +265,13 @@ textarea{
 /* =========================================== */
 /* !Common                                     */
 /* =========================================== */
-img{
+img,
+embed,
+object{
 	height: auto;
+	max-width: 100%;
+}
+iframe{
 	max-width: 100%;
 }
 
@@ -293,10 +299,13 @@ article{
 	user-select: none;
 
 	&:hover,
-	&:focus{
+	&:focus,
+	&.important{
 		border-color: fadeout(@red_active, 20%);
 		color: @red_active;
-
+	}
+	&:hover,
+	&:focus{
 		.box-shadow(0 0 3px rgba(0,0,0,0.2));
 	}
 	&:active{
@@ -545,15 +554,11 @@ body{
 	}
 
 	a{
+		border: 0;
 		color: @lgray;
 		display: block;
 		font-size: 16/@em;
 		text-decoration: none;
-
-		&:hover,
-		&:active{
-			border-bottom: 0;
-		}
 	}
 
 	.social{
@@ -702,7 +707,7 @@ article{
 	font-weight: @thin;
 }
 .entry-content{
-	a{
+	a:not([class~="button"]){
 		border-bottom: 1px solid @red_active;
 	}
 	.right,
