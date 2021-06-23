@@ -47,7 +47,7 @@ get_header(); ?>
 				<header class="center">
 					<hgroup>
 						<h2>
-							<?php _e('Work', 'toeknee') ?> <span class="separator"><?php _e('hard', 'toeknee') ?></span> <?php _e('Play', 'toeknee') ?> <span class="separator"><?php _e('harder', 'toeknee') ?></span></h2>
+							<?php _e('Work', 'toeknee') ?> <span class="separator"><?php _e('SOFTER', 'toeknee') ?></span> <?php _e('Play', 'toeknee') ?> <span class="separator"><?php _e('SOFTERer', 'toeknee') ?></span></h2>
 						<h6 class="subheadline"><?php echo esc_attr( get_field('subheadline') ) ?></h6>
 					</hgroup>
 				</header>
